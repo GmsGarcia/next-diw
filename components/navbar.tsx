@@ -24,14 +24,25 @@ export default function NavBar() {
       >
         Home
       </a>
+      
       <a
-        className={getActive() === "about" ? active : normal}
-        href="/about"
+        className={getActive() === "tecnologias" ? active : normal}
+        href="/tecnologias"
         target="_self"
         rel="noopener noreferrer"
       >
-        About
+        Tecnologias
       </a>
+
+      <a
+        className={getActive() === "projetos" ? active : normal}
+        href="/projetos"
+        target="_self"
+        rel="noopener noreferrer"
+      >
+        Projetos
+      </a>
+      
       <a
         className={getActive() === "caracteristicas" ? active : normal}
         href="/caracteristicas"
@@ -40,13 +51,23 @@ export default function NavBar() {
       >
         Caracteristicas
       </a>
+
       <a
-        className={getActive() === "tecnologias" ? active : normal}
-        href="/tecnologias"
+        className={getActive() === "contador" ? active : normal}
+        href="/contador"
         target="_self"
         rel="noopener noreferrer"
       >
-        Tecnologias
+        Contador
+      </a>
+
+      <a
+        className={getActive() === "about" ? active : normal}
+        href="/about"
+        target="_self"
+        rel="noopener noreferrer"
+      >
+        About
       </a>
     </div>
   );

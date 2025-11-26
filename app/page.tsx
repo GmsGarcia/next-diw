@@ -1,12 +1,7 @@
-import Image from "next/image";
-import Title from "@/components/title";
-import Label from "@/components/label";
-
 export default function Home() {
   return (
-    <div className="flex items-center justify-center font-sans">
-      <Title text="next-diw" />
-      <Label text="NextJS with DIW" />
+    <div className="text-center font-sans">
+      <h1 className="text-3xl font-bold">next-diw</h1>
     </div>
   );
 }

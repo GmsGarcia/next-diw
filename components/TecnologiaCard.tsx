@@ -1,13 +1,13 @@
 interface TecnologiaCardProps {
   title: string,
-  description: string
+  image: string
 }
 
-export default function TecnologiaCard({title, description}: TecnologiaCardProps) {
+export default function TecnologiaCard({title, image}: TecnologiaCardProps) {
   return (
-    <div className="flex flex-col p-2 bg-black p-2 gap-2">
+    <div className="flex flex-col p-2 bg-white text-black gap-2 rounded-md">
       <h2 className="font-bold">{title}</h2>
-      <p>{description}</p>
+      <img src={image} alt={title} />
     </div>
   );
 }

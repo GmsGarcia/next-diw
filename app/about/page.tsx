@@ -1,12 +1,9 @@
 import Image from "next/image";
-import Title from "@/components/title";
-import Label from "@/components/label";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div className="flex items-center justify-center font-sans">
-      <Title text="about DIW" />
-      <Label text="ahhhhhhhhh" />
+      <h1 className="text-3xl font-bold">About DIW</h1>
     </div>
   );
 }

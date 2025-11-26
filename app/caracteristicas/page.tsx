@@ -1,4 +1,6 @@
-export default function About() {
+import Caracterisitica from "@/components/Caracteristica";
+
+export default function CaracteristicasPage() {
   const caracteristicas = [
     'JSX, sintaxe que mistura HTML e JS.',
     'Componentes, funções que retornam JSX.',
@@ -11,12 +13,13 @@ export default function About() {
   ]
 
   return (
-    <div className="flex items-center justify-center font-sans">
-      <ul>
+    <div className="flex flex-col text-center">
+      <h1 className="text-3xl font-bold">Caracteristicas</h1>
+      <div className="flex flex-wrap items-center justify-center font-sans">
         {caracteristicas.map((c, i) => {
-          return <li key={i}>{c}</li>
-        })}
-      </ul>
+          return <Caracterisitica key={i} caracteristica={c} />
+          })}
+      </div>
     </div>
   );
 }
